@@ -3,7 +3,6 @@ import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage.tsx';
 import EmployeeLogin from './EmployeeLoginPage.tsx';
-import RegisterPage from './register.tsx';
 
 const App: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ const App: React.FC = () => {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/employee-login" element={<EmployeeLogin />} />
-          <Route path="/create-account" element={<RegisterPage/>} />
+          {/* Add more routes for other pages */}
         </Routes>
       </Router>
     </ChakraProvider>

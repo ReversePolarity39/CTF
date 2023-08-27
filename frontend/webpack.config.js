@@ -6,7 +6,7 @@ module.exports = {
       "net": false,
       "tls": false,
       "path": false,
-      "crypto": false,
+      "crypto": require.resolve("crypto-browserify")
       "stream": false
     }
   }
