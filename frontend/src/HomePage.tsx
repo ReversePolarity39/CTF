@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Flex, Heading, Text } from '@chakra-ui/react';
-
+import imageSrc from './amazon_logo.png'
 const HomePage = () => {
   return (
     <Flex
@@ -8,22 +8,31 @@ const HomePage = () => {
       align="center"
       justify="center"
       height="100vh"
-      bg="amazonBlue"
+      bg="#232F3E" // Dark blue background color similar to Amazon's color scheme
       color="white"
+      backgroundImage="url('amazon_background.jpg')" // Replace with the actual path to your background image
+      backgroundSize="cover"
+      backgroundPosition="center"
     >
-      <Heading fontSize="4xl" mb={4}>
-        Welcome to Amazon Customer Service
+      <img
+        src={imageSrc}// Replace with the actual path to your Amazon logo image
+        alt="Amazon Logo"
+        width="150"
+        height="auto"
+      />
+      <Heading fontSize="4xl" my={4} textAlign="center">
+        Welcome to Amazon Employee Portal
       </Heading>
-      <Text fontSize="xl" mb={8}>
-        We're here to help you with all your inquiries.
+      <Text fontSize="xl" mb={8} textAlign="center">
+        Your gateway to the world's most customer-centric company.
       </Text>
       <Button
         as="a"
         href="/employee-login" // Replace with the actual link to your employee login page
         target="_blank"
         rel="noopener noreferrer"
-        bg="orange.500"
-        _hover={{ bg: 'orange.400' }}
+        bg="#FF9900" // Amazon orange color
+        _hover={{ bg: '#FFA500' }}
         color="white"
         fontWeight="bold"
         fontSize="lg"
