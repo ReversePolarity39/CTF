@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NCL Workshop</title>
+</head>
+<body>
+<h1>Welcome to NCL Workshop</h1>
+<% if (isAdmin) { %>
+    <p>You are an admin! <a href="/admin">View admin page</a></p>
+<% } else { %>
+    <p>You are not an admin. <a href="/login">Login</a></p>
+<% } %>
+</body>
+</html>

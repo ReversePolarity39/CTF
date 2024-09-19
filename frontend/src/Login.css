@@ -1,0 +1,36 @@
+/* src/Login.css */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* This ensures the container spans the full viewport width */
+    background: linear-gradient(-45deg, #4b6cb7, #182848, #4b6cb7, #182848);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+    color: white;
+}
+
+.login-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+}

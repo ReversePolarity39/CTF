@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /CCSCTF{N01S@F3)
